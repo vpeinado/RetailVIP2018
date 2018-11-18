@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" extends="task" label="RetailVIP" max_length="40" name="x_59153_retailvip_retailvip" sizeclass="135" type="collection">
+        <element choice="1" label="Reason for Escalation" max_length="100" name="reason_for_escalation" type="string">
+            <choice/>
+        </element>
+        <element choice="3" default="1" label="RVIPStatus" max_length="40" name="rvipstatus" type="choice">
+            <choice>
+                <element label="New" sequence="0" value="1"/>
+                <element label="Open" sequence="1" value="2"/>
+                <element label="Closed" sequence="2" value="3"/>
+                <element label="Resolved" sequence="3" value="4"/>
+                <element label="Canceled" sequence="4" value="5"/>
+            </choice>
+        </element>
+        <element label="RVP/DM" mandatory="true" max_length="32" name="rvp_dm" reference="sys_user" type="reference"/>
+    </element>
+</database>

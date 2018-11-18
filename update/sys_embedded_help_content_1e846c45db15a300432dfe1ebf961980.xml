@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>service-level-management</category>
+        <content><![CDATA[ <h1 class="title topictitle1">SLA conditions</h1>  <div class="body conbody">  <p class="p">SLA condition rules control how the conditions in an SLA definition are combined to determine   whether an SLA should attach, pause, complete, reattach, or cancel.</p>  <p class="p">SLA condition rules vary the way that conditions in an SLA definition are interpreted to   control state transitions. SLA condition rules are defined globally, and can be overridden for   specific SLA definitions.</p>  <p class="p"><span class="ph uicontrol">SLAConditionBase</span> is the default set of SLA condition rules.</p>  <p class="p">You must define some of the following parameters:</p>  <ul class="ul" id="sla_condition_class_list-normal__ul_awh_gqx_bz"><li class="li"><span class="ph uicontrol">Name</span>: Specify the name of the the SLA condition rule.</li><li class="li"><span class="ph uicontrol">Active</span>: Select to track all active SLA records associated with the    task. The SLA engine determines the changing stage of an SLA record.</li><li class="li"><span class="ph uicontrol">Application</span>: Specify whether the SLA condition rule is applicable in    global application or it is specific to the current application. </li><li class="li"><span class="ph uicontrol">Class Name</span>: Specify the script Include in the class name reference    field.</li></ul> </div> <div class="related-links"><div class="relinfo"><div class="reltitle">Related information<br /><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:Service-Level-Management&amp;version&#61;kingston" target="_blank">Service Level Management</a></div><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:SLA-processing&amp;version&#61;kingston%20" target="_blank">SLA processing</a></div><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:SLA-Conditions&amp;version&#61;kingston%20" target="_blank">SLA conditions</a></div><div><a class="link" href="https://community.servicenow.com/docs/DOC-5853" target="_blank">SLA FAQs</a></div></div></div></div>]]></content>
+        <last_sync>2018-11-04 03:09:10</last_sync>
+        <modifier>normal</modifier>
+        <name>sla_condition_class_list-normal</name>
+        <page>sla_condition_class_list</page>
+        <product>1</product>
+        <qualifier/>
+        <role/>
+        <role_order>1000</role_order>
+        <snc_created>true</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-10-20 03:08:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1e846c45db15a300432dfe1ebf961980</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>sla_condition_class_list-normal</sys_name>
+        <sys_package display_value="RetailVIP" source="x_59153_retailvip">3c20fdabdbabd300432dfe1ebf9619b1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RetailVIP">3c20fdabdbabd300432dfe1ebf9619b1</sys_scope>
+        <sys_update_name>sys_embedded_help_content_1e846c45db15a300432dfe1ebf961980</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-11-04 03:09:10</sys_updated_on>
+        <version>k</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=1e846c45db15a300432dfe1ebf961980"/>
+</record_update>

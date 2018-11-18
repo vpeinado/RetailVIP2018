@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="pa_dashboards_permissions">
+    <pa_dashboards_permissions action="INSERT_OR_UPDATE">
+        <dashboard display_value="Ehitcs &amp; Compliance Overview">eb35202fdbd16b00432dfe1ebf961915</dashboard>
+        <delete>false</delete>
+        <group/>
+        <identity>x_59153_case_compl.admin</identity>
+        <read>true</read>
+        <role display_value="x_59153_case_compl.admin" name="x_59153_case_compl.admin">87b07f55db19e300432dfe1ebf96190e</role>
+        <sys_class_name>pa_dashboards_permissions</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-27 21:36:51</sys_created_on>
+        <sys_id>7265242fdbd16b00432dfe1ebf9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_59153_case_compl.admin</sys_name>
+        <sys_package display_value="RetailVIP" source="x_59153_retailvip">3c20fdabdbabd300432dfe1ebf9619b1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RetailVIP">3c20fdabdbabd300432dfe1ebf9619b1</sys_scope>
+        <sys_update_name>pa_dashboards_permissions_7265242fdbd16b00432dfe1ebf9619b2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-27 21:36:51</sys_updated_on>
+        <type>1</type>
+        <user/>
+        <write>false</write>
+    </pa_dashboards_permissions>
+</record_update>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_59153_retailvip_retailvip</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Auto Close </name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[// This script automatically closes incidents that are resolved
+// and haven't been updated in the specified number of days.
+// This number is a property in System Properties.
+// To place a comment in the incident, uncomment the "gr.comments" line.
+
+autoCloseIncidents();
+
+function autoCloseIncidents() {
+	var ps = gs.getProperty('glide.ui.autoclose.time');
+	var pn = parseInt(ps);
+	var queryTime = new GlideDateTime();
+	queryTime.addDaysUTC(-pn);
+
+	if (pn > 0) {
+		var gr = new GlideRecord('incident');
+		gr.addQuery('incident_state', IncidentState.RESOLVED);
+		gr.addQuery('sys_updated_on', '<', queryTime);
+		gr.query();
+		while(gr.next()) {
+			gr.incident_state = IncidentState.CLOSED;
+			//  gr.comments = 'Incident automatically closed after ' + pn + ' days in the Resolved state.';
+			gr.active = false;
+			gr.closed_by = gr.resolved_by;
+			gr.update(); 
+		}
+	}
+}]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-19 19:01:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de8476b4dbdd6300432dfe1ebf9619ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Auto Close </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="RetailVIP" source="x_59153_retailvip">3c20fdabdbabd300432dfe1ebf9619b1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RetailVIP">3c20fdabdbabd300432dfe1ebf9619b1</sys_scope>
+        <sys_update_name>sys_script_de8476b4dbdd6300432dfe1ebf9619ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-19 19:01:21</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=de8476b4dbdd6300432dfe1ebf9619ad"/>
+</record_update>

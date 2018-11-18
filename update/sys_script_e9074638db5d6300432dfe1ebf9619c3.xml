@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>true</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_59153_retailvip_retailvip</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_59153_retailvip_retailvip">rvipstatusCHANGESTO4^ORrvipstatusCHANGESTO1^ORrvipstatusCHANGESTO2^EQ<item endquery="false" field="rvipstatus" goto="false" newquery="false" operator="CHANGESTO" or="false" value="4"/>
+            <item endquery="false" field="rvipstatus" goto="false" newquery="false" operator="CHANGESTO" or="true" value="1"/>
+            <item endquery="false" field="rvipstatus" goto="false" newquery="false" operator="CHANGESTO" or="true" value="2"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p>Thanks for Resolving.</p>]]></message>
+        <name>Active</name>
+        <order>90</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+/*current.active=true;
+if (current.phase_state.changesTo('resolved'))
+{current.state = 4;}
+   //if (current.phase_state.changesTo('open'))
+   //{current.state = 2;}
+*/
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-19 15:40:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e9074638db5d6300432dfe1ebf9619c3</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Active</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="RetailVIP" source="x_59153_retailvip">3c20fdabdbabd300432dfe1ebf9619b1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RetailVIP">3c20fdabdbabd300432dfe1ebf9619b1</sys_scope>
+        <sys_update_name>sys_script_e9074638db5d6300432dfe1ebf9619c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-20 00:06:10</sys_updated_on>
+        <template>active=true^EQ</template>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=e9074638db5d6300432dfe1ebf9619c3"/>
+</record_update>

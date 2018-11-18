@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices>7,14,21,28</choices>
+        <description>Number of Days a RetailVIP is overdue before it should automatically close.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_59153_retailvip.AutoCloseOverdue</name>
+        <read_roles>admin</read_roles>
+        <suffix>AutoCloseOverdue</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-17 17:13:14</sys_created_on>
+        <sys_id>ed284854db512300432dfe1ebf9619f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_59153_retailvip.AutoCloseOverdue</sys_name>
+        <sys_package display_value="RetailVIP" source="x_59153_retailvip">3c20fdabdbabd300432dfe1ebf9619b1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RetailVIP">3c20fdabdbabd300432dfe1ebf9619b1</sys_scope>
+        <sys_update_name>sys_properties_ed284854db512300432dfe1ebf9619f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-17 17:13:14</sys_updated_on>
+        <type>choicelist</type>
+        <value>14</value>
+        <write_roles>admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=ed284854db512300432dfe1ebf9619f8"/>
+</record_update>
